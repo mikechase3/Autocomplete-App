@@ -9,7 +9,7 @@ To do so, sort the terms in lexicographic order;
 use binary search to find the all query strings 
 that start with a given prefix; and sort the matching terms in descending order by weight. 
 constructor:
-	merge sort + byPrefixOrder(int r)
+	merge sort + byPrefixOrder()
 allMatches:
 	BinarySearchDeluxe->first & last;
 	sort(Terms,first,last,byReverseWeightOrder());
@@ -30,7 +30,7 @@ public class Autocomplete {
 	public Autocomplete(Term[] terms)
 	{
 		int length = terms.length;
-		mergesort(terms,terms.begin,terms.end,byPrefixOrder(length));
+		mergesort(terms,terms.begin,terms.end,byPrefixOrder());
 	}
 
 	//Member Methods
@@ -39,10 +39,19 @@ public class Autocomplete {
      * @param prefix
      * @return
      */
+	
+	// I guess Key is a type that hasn't specified.
     public Term[] allMatches(String prefix){
-    	return terms;
+    	 Term term;
+    	 term.query = prefix;
+    	 int first = firstIndexOf(Term[] terms, Term term, byPrefixOrder());
+    	 int last = lastIndexOf(Term[] terms, Term term, byPrefixOrder());
+    	 sort(Terms,first,last,byReverseWeightOrder());
+    	 Term[] Mterms = new Term[last-first+1];
+    	 for(int i = first;i<last;i++) Mterms[i] = terms[i];
+    	return Mterms;
     }
-    
+    // I guess Key is a type that hasn't specified.
     private void mergesort(Term[] terms,int begin,int end, Comparator camp)
     {
     	if(begin>end) return;
