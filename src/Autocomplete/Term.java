@@ -56,6 +56,7 @@ public class Term implements Comparable<Term> {
 		return 0;
 
 	}
+      //what about the equal situation?......................................................................................
 
 	// Returns a string representation of this in the following format:
 	// weight (i.e., ??.toString()), followed by a tab, followed by query
