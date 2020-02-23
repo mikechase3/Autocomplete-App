@@ -30,7 +30,8 @@ public class Autocomplete {
 	public Autocomplete(Term[] terms)
 	{
 		int length = terms.length;
-		mergesort(terms,terms.begin,terms.end,byPrefixOrder());
+		mergesort(this.terms,terms.begin,terms.end,byPrefixOrder());
+		this.terms = terms;
 	}
 
 	//Member Methods
