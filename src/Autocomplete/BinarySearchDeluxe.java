@@ -5,6 +5,7 @@ public class BinarySearchDeluxe {
 
     //Constructor
     public BinarySearchDeluxe(){
+        
 
     }
 
