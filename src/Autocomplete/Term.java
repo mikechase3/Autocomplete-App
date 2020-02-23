@@ -45,6 +45,14 @@ public class Term implements Comparable<Term> {
 			}
 			
 		}
+		if(query.length()>that.query.length())
+		{
+			return 1;
+		}
+		if(query.length()<that.query.length())
+		{
+			return -1;
+		}
 		return 0;
 
 	}
