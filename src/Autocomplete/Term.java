@@ -1,5 +1,46 @@
 package Autocomplete;
 
-public class Term {
+import java.util.Comparator;
 
+public class Term implements Comparator<Term> {
+	
+	String query;
+	static long weight;
+	/* Initializes a term with the given query string and weight*/
+	public Term(String query, long weight )
+	{
+		this.query= query;
+		this.weight= weight;
+	}
+	
+	/* Compares the two terms in descending order by weight*/
+	public static Comparator<Term> byReverseWeightOrder()
+	{
+		return new Comparator<Term>;
+	}
+	/* Compares the two terms in lexicographic order but using only the first
+	 * r  characters of each query
+	 */
+	public static Comparator<Term> byPrefixOrder(int r)
+	{
+		
+	}
+	
+	/* Compares the two terms in lexicographic order by query */
+	public int compareTo(Term that)
+	{
+		
+	}
+
+	@Override
+	public int compare(Term arg0, Term arg1) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	// Returns a string representation of this in the following format:
+	// weight (i.e., ??.toString()), followed by a tab, followed by query
+	public String toString()
+	{
+		return Long.toString(weight) +"	"+ query;
+	}
 }
