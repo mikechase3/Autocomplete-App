@@ -1,6 +1,4 @@
 package Autocomplete;
-
-import java.security.Key;
 import java.util.Comparator;
 
 public class BinarySearchDeluxe {
@@ -22,5 +20,4 @@ public class BinarySearchDeluxe {
         System.out.println("Doesn't work");
         return 6;
     }
-
 }
