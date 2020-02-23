@@ -16,7 +16,7 @@ public class Term implements Comparator<Term> {
 	/* Compares the two terms in descending order by weight*/
 	public static Comparator<Term> byReverseWeightOrder()
 	{
-		return new Comparator<Term>;
+		return 6;
 	}
 	/* Compares the two terms in lexicographic order but using only the first
 	 * r  characters of each query
@@ -29,7 +29,22 @@ public class Term implements Comparator<Term> {
 	/* Compares the two terms in lexicographic order by query */
 	public int compareTo(Term that)
 	{
-		
+		for(int i=0;i<query.length() && i<that.query.length();i++)
+		{
+			char thisCurChar= query.charAt(i);
+			char thatCurChar= query.charAt(i);
+			if(thisCurChar >thatCurChar)
+			{
+				return 1;
+			}
+			if(thisCurChar <thatCurChar)
+			{
+				return -1;
+			}
+			
+		}
+		return 0;
+
 	}
 
 	@Override
