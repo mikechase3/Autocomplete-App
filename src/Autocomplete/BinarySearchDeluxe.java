@@ -5,9 +5,9 @@ public class BinarySearchDeluxe {
 
     //Constructor
     public BinarySearchDeluxe(){
-        
 
     }
 
     //Member Methods
+    public static
 }
