@@ -29,9 +29,9 @@ public class Autocomplete {
      */
 	public Autocomplete(Term[] terms)
 	{
-		int length = terms.length;
-		mergesort(this.terms,terms.begin,terms.end,byPrefixOrder());
 		this.terms = terms;
+		int length = terms.length;
+		mergesort(terms,terms.begin,terms.end,byPrefixOrder());
 	}
 
 	//Member Methods
@@ -45,8 +45,9 @@ public class Autocomplete {
     public Term[] allMatches(String prefix){
     	 Term term;
     	 term.query = prefix;
-    	 int first = firstIndexOf(Term[] terms, Term term, byPrefixOrder());
-    	 int last = lastIndexOf(Term[] terms, Term term, byPrefixOrder());
+    	 int length = prefix.length£»
+    	 int first = firstIndexOf(Term[] terms, Term term, byPrefixOrder(length));
+    	 int last = lastIndexOf(Term[] terms, Term term, byPrefixOrder(length));
     	 sort(Terms,first,last,byReverseWeightOrder());
     	 Term[] Mterms = new Term[last-first+1];
     	 for(int i = first;i<last;i++) Mterms[i] = terms[i];
