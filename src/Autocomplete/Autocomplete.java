@@ -4,7 +4,6 @@ public class Autocomplete {
 
     //Member Variables
 	Term[] terms;
-	int[] someArray = new int[]{1, 2, 3, 4, 5, 6, 7, 8}; //TODO Delete
 
 	//Constructor
     /**
@@ -23,7 +22,7 @@ public class Autocomplete {
      * @return
      */
     public Term[] allMatches(String prefix){
-
+    	return terms;
     }
 
 }

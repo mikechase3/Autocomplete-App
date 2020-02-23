@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c54db786-633c-4f1c-9d34-0c772e12a08f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Autocomplete/Autocomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autocomplete/Autocomplete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Autocomplete/BinarySearchDeluxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autocomplete/BinarySearchDeluxe.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,12 +29,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Autocomplete/Autocomplete.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="270">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
               <folding>
                 <element signature="docComment;method#Autocomplete#0;class#Autocomplete#0" />
-                <element signature="e#115#116#0" expanded="true" />
-                <element signature="e#138#139#0" expanded="true" />
+                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
                 <element signature="docComment;method#allMatches#0;class#Autocomplete#0" />
               </folding>
             </state>
@@ -122,7 +120,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="960" />
     <option name="y" value="23" />
     <option name="width" value="960" />
     <option name="height" value="1125" />
@@ -207,7 +206,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582475910020</updated>
-      <workItem from="1582475913953" duration="6040000" />
+      <workItem from="1582475913953" duration="6470000" />
     </task>
     <task id="LOCAL-00001" summary="Started the binary search file">
       <created>1582478503689</created>
@@ -237,14 +236,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582482608168</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Started the binary search file">
+      <created>1582483072092</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582483072092</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6040000" />
+    <option name="totallyTimeSpent" value="6470000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1125" extended-state="6" />
+    <frame x="960" y="23" width="960" height="1125" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" />
@@ -253,7 +259,7 @@
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16932908" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34640524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -338,12 +344,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Autocomplete/Autocomplete.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="270">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding>
             <element signature="docComment;method#Autocomplete#0;class#Autocomplete#0" />
-            <element signature="e#115#116#0" expanded="true" />
-            <element signature="e#138#139#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
             <element signature="docComment;method#allMatches#0;class#Autocomplete#0" />
           </folding>
         </state>
