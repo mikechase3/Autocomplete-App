@@ -1,9 +1,26 @@
 package Autocomplete;
 
+import java.util.Comparator;
+
+/**In this part, you will implement a data type that provides autocomplete functionality
+for a given set of string and weights, 
+using Term and BinarySearchDeluxe. 
+To do so, sort the terms in lexicographic order; 
+use binary search to find the all query strings 
+that start with a given prefix; and sort the matching terms in descending order by weight. 
+constructor:
+	merge sort + byPrefixOrder()
+allMatches:
+	BinarySearchDeluxe->first & last;
+	sort(Terms,first,last,byReverseWeightOrder());
+	Mterms = Terms[first:last];
+	return Mterms;
+*/
+//where to use the byPrefixOrder(int r)
 public class Autocomplete {
 
     //Member Variables
-	Term[] terms;
+	Term[] terms = new Term[];
 
 	//Constructor
     /**
@@ -11,8 +28,11 @@ public class Autocomplete {
      * @param terms
      */
 	public Autocomplete(Term[] terms)
-	{
-		this.terms=terms;
+	{	//check if any of the entries in its argument array are null.
+		if(!terms) throw java.lang.NullPointerException;
+		this.terms = terms;
+		int length = terms.length()
+		mergesort(terms,0,,length-1,Term.byReverseWeightOrder());
 	}
 
 	//Member Methods
@@ -21,10 +41,59 @@ public class Autocomplete {
      * @param prefix
      * @return
      */
+	/*public Term[] allMatches(String prefix)
+{
+Comparator comp = Term.byPrefixOrder(prefix.length());
+Term key = new Term(prefix, ??);
+int begin = BinarySearchDeluxe.firstIndexOf(terms, key, comp);
+if (¡­) return ¡­; // no matches
+int end = ¡­;
+Term[] match = new Term[end ¨C begin + 1];
+¡­ // merge sort array match byReverseWeightOrder();
+return match;
+}*/
+	// I guess Key is a type that hasn't specified.
     public Term[] allMatches(String prefix){
-    	return terms;
+    	if(!prefix) throw java.lang.NullPointerException;
+    	 Term term = new Term(prefix,(lnog)0);
+    	 Term[] NoMathch = new Term[1];
+    	 if(!trem) throw java.lang.NullPointerException;
+    	 if(!NoMatch) throw java.lang.NullPointerException;
+    	 NoMathch[0].query = "No match";
+    	 term.query = prefix;
+    	 int length = prefix.length()£»
+    	 int first = BinarySearchDeluxe.firstIndexOf(terms, term, Term.byPrefixOrder(length));
+    	 //???
+    	 if(first == -1) return NoMathch;
+    	 int last = BinarySearchDeluxe.lastIndexOf(terms, term, Term.byPrefixOrder(length));
+    	 mergesort(terms,first,last,Term.byReverseWeightOrder());
+    	 Term[] Mterms = new Term[last-first+1];
+    	 for(int i = first;i<last;i++) Mterms[i] = terms[i];
+    	 mergesort(Mterms,first,last,Term,byReverseWeightOrder());
+    	return Mterms;
     }
-
+    // I guess Key is a type that hasn't specified.
+    private void mergesort(Term[] terms,int begin,int end, Comparator camp)
+    {
+    	if(begin>end) return;
+    	int mid = begin+(end-begin)/2;
+    	mergesort(terms,begin,mid,camp);
+    	mergesort(terms,mid+1,end,camp);
+    	merge(terms,begin,mid,end,camp);
+    }
+    private void merge(Term[] terms,int begin,int mid,int end,Comparator<Term> camp)
+    {
+    	Term[] aux = new Term[terms.length];
+    	for(int i = begin;i<=end;i++) aux[i] = terms[i];    
+    	int i = begin,j = mid,k = begin;
+    	while(i<=mid&&j<=end&&k<end)
+    	{
+    		if(camp.compare(terms[i], terms[j])>0) terms[k++] = aux[j++];//a[i]>a[j],aux[k] = a[j]
+    		else terms[k++] = aux[i++];
+    	}
+    	while(i<=mid) terms[k++] = aux[i++];
+    	//j part has already there
+    }
 }
 
 //>>>>>>> 63e9b4bd3fbde97c6d41eabf20ce2386a5671654
