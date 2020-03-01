@@ -16,17 +16,46 @@ public class Term implements Comparable<Term> {
 	/* Compares the two terms in descending order by weight*/
 	public static Comparator<Term> byReverseWeightOrder()
 	{
-		return Comparator.reverseOrder();
+		return new ReverseWeightOrder();
 		//return null;
-		
+	}
+	private static class ReverseWeightOrder() implements Comparator<Term>
+	{
+		public int compare(Term o1,Term o2)
+		{
+			if(o1.weight>o2.weight)
+			{
+				return 1;
+			}
+			if(o1.weight<o2.weight)
+			{
+				return 1;
+			}
+			return 0;
+		}
 	}
 	/* Compares the two terms in lexicographic order but using only the first
 	 * r  characters of each query
 	 */
 	public static Comparator<Term> byPrefixOrder(int r)
 	{
-		return Comparator.naturalOrder();//byPrefixOrder(r);
+		return new byPrefixOrder();
+		//return null;
 	}
+	private static class PrefixOrder() implements Comparator<Term>
+	{
+		public int compare(Term o1,Term o2)
+		{
+			if(o1.query.subSequence(beginIndex, endIndex)>o2.weight)
+			{
+				return 1;
+			}
+			if(o1.weight<o2.weight)
+			{
+				return 1;
+			}
+			return 0;
+		}
 	
 	/* Compares the two terms in lexicographic order by query */
 	public int compareTo(Term that)
