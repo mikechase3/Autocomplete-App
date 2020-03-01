@@ -1,4 +1,5 @@
-package Autocomplete; /******************************************************************************
+package Autocomplete;
+/******************************************************************************
  *  Compilation:  javac AutocompleteGUI.java
  *  Execution:    java  AutocompleteGUI input.txt k
  *  Dependencies: Autocomplete.java Term.java
