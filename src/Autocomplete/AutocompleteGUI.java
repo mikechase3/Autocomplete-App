@@ -1,4 +1,4 @@
-/******************************************************************************
+package Autocomplete; /******************************************************************************
  *  Compilation:  javac AutocompleteGUI.java
  *  Execution:    java  AutocompleteGUI input.txt k
  *  Dependencies: Autocomplete.java Term.java
@@ -510,7 +510,7 @@ public class AutocompleteGUI extends JFrame {
                                     GroupLayout.DEFAULT_SIZE,
                                     GroupLayout.PREFERRED_SIZE)
                             .addComponent(suggestionsPanel, 
-                                    GroupLayout.DEFAULT_SIZE, 
+                                    GroupLayout.DEFAULT_SIZE,
                                     GroupLayout.DEFAULT_SIZE, 
                                     GroupLayout.PREFERRED_SIZE))
 
