@@ -510,7 +510,7 @@ public class AutocompleteGUI extends JFrame {
                                     GroupLayout.DEFAULT_SIZE,
                                     GroupLayout.PREFERRED_SIZE)
                             .addComponent(suggestionsPanel, 
-                                    GroupLayout.DEFAULT_SIZE, 
+                                    GroupLayout.DEFAULT_SIZE,
                                     GroupLayout.DEFAULT_SIZE, 
                                     GroupLayout.PREFERRED_SIZE))
 

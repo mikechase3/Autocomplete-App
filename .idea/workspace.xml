@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c54db786-633c-4f1c-9d34-0c772e12a08f" name="Default Changelist" comment="">
+    <list default="true" id="c54db786-633c-4f1c-9d34-0c772e12a08f" name="Default Changelist" comment="Started the binary search file">
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Given Resources/AS3 Description.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Given Resources/AS3 Description.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Given Resources/AutocompleteGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Given Resources/AutocompleteGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Given Resources/In.java" beforeDir="false" afterPath="$PROJECT_DIR$/Given Resources/In.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Given Resources/StdIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Given Resources/StdIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Given Resources/cities.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Given Resources/cities.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Given Resources/wiktionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Given Resources/wiktionary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chase-cowden-yuquin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chase-cowden-yuquin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/cities.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/cities.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/wiktionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/wiktionary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/META-INF/chase-cowden-yuquin.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Autocomplete/Autocomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autocomplete/Autocomplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Autocomplete/AutocompleteGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autocomplete/AutocompleteGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Autocomplete/BinarySearchDeluxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autocomplete/BinarySearchDeluxe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Autocomplete/In.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autocomplete/In.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Autocomplete/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Autocomplete/StdIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autocomplete/StdIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Autocomplete/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autocomplete/Term.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Autocomplete/cities.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autocomplete/cities.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Autocomplete/wiktionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autocomplete/wiktionary.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,29 +42,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Autocomplete/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Autocomplete/Autocomplete.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+            <state relative-caret-position="255">
+              <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
               <folding>
                 <element signature="docComment;method#Autocomplete#0;class#Autocomplete#0" />
-                <element signature="e#307#308#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
                 <element signature="docComment;method#allMatches#0;class#Autocomplete#0" />
               </folding>
             </state>
@@ -44,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Autocomplete/BinarySearchDeluxe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            <state relative-caret-position="330">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -53,8 +71,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Autocomplete/Term.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+              <folding>
+                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#696#697#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,30 +88,21 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Autocomplete/cities.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5998" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Autocomplete/AutocompleteGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="570" lean-forward="true" selection-start-line="570" selection-end-line="570" />
+            <state relative-caret-position="616">
+              <caret line="512" column="61" selection-start-line="512" selection-start-column="61" selection-end-line="512" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Autocomplete/In.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -113,14 +126,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Autocomplete/AutocompleteGUI.java" />
-        <option value="$PROJECT_DIR$/src/Autocomplete/Main.java" />
         <option value="$PROJECT_DIR$/src/Autocomplete/BinarySearchDeluxe.java" />
         <option value="$PROJECT_DIR$/src/Autocomplete/Autocomplete.java" />
+        <option value="$PROJECT_DIR$/src/Autocomplete/Main.java" />
+        <option value="$PROJECT_DIR$/src/Autocomplete/AutocompleteGUI.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="960" />
     <option name="y" value="23" />
     <option name="width" value="960" />
@@ -132,7 +145,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,13 +168,18 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -182,8 +200,9 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Autocomplete.Main" />
+      <option name="MAIN_CLASS_NAME" value="Autocomplete.AutocompleteGUI" />
       <module name="chase-cowden-yuquin" />
+      <option name="PROGRAM_PARAMETERS" value="wiktionary.txt 7" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -206,7 +225,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582475910020</updated>
-      <workItem from="1582475913953" duration="6470000" />
+      <workItem from="1582475913953" duration="7431000" />
+      <workItem from="1583100357843" duration="859000" />
     </task>
     <task id="LOCAL-00001" summary="Started the binary search file">
       <created>1582478503689</created>
@@ -243,46 +263,67 @@
       <option name="project" value="LOCAL" />
       <updated>1582483072092</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Started the binary search file">
+      <created>1582483518223</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582483518223</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Started the binary search file">
+      <created>1582483639372</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582483639372</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Started the binary search file">
+      <created>1582483803087</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582483803087</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6470000" />
+    <option name="totallyTimeSpent" value="8290000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="23" width="960" height="1125" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1125" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34640524" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17305644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Messages" visible="true" weight="0.32913843" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32913843" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32913843" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32913843" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,67 +334,129 @@
     <option name="LAST_COMMIT_MESSAGE" value="Started the binary search file" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chase-cowden-yuquin.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Autocomplete/cities.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5998" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Autocomplete/In.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Autocomplete/Term.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Autocomplete/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/Autocomplete/wiktionary.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Autocomplete/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/Autocomplete/cities.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Autocomplete/BinarySearchDeluxe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/Autocomplete/In.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Autocomplete/AutocompleteGUI.java">
+    <entry file="file://$PROJECT_DIR$/chase-cowden-yuquin.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Autocomplete/Term.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="570" lean-forward="true" selection-start-line="570" selection-end-line="570" />
+        <state relative-caret-position="270">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Autocomplete/Autocomplete.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        <state relative-caret-position="255">
+          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
           <folding>
             <element signature="docComment;method#Autocomplete#0;class#Autocomplete#0" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
             <element signature="docComment;method#allMatches#0;class#Autocomplete#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Autocomplete/BinarySearchDeluxe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Autocomplete/AutocompleteGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="512" column="61" selection-start-line="512" selection-start-column="61" selection-end-line="512" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>chase-cowden-yuquin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
