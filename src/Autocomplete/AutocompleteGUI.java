@@ -696,4 +696,5 @@ public class AutocompleteGUI extends JFrame {
                     }
                 });
     }
+
 }
