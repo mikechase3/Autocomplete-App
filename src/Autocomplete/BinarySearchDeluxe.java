@@ -26,18 +26,19 @@ public class BinarySearchDeluxe {
         System.out.println("BinarySearchDeluxe.firstIndexOf");
         int low = 0; //Sets an initial value of low.
         int high = a.length-1; //Sets an initial value of high for the binarysearch recursive method.
-        int returned = getFirstIndexOf(a, key, comparator, low, high); //Begin recursive method.
+        int returned = recursiveFirstIndexOf(a, key, comparator, low, high); //Begin recursive method.
 
         if (returned == -1){
             System.out.println("BinarySearchDeluxe.firstIndexOf");
             throw new NoSuchElementException("The object does not exist.");
         }
 
+        return returned;
 
 
     }
 
-    private static <Key> int getFirstIndexOf(Key[] a, Key key, Comparator<Key> comparator, int low, int high){
+    private static <Key> int recursiveFirstIndexOf(Key[] a, Key key, Comparator<Key> comparator, int low, int high){
         int midIndex = low + ((high-low)/2);
         int indexPosition = -1;
 
@@ -50,9 +51,20 @@ public class BinarySearchDeluxe {
             }
             indexPosition = midIndex; //Return the index of the lowest thing that matches.
         }
+        /**
+         * If the provided key is larger than the middle index, eliminate half the array and check the midpoint again.
+         */
+        else if (comparator.compare(key, a[midIndex]) == 1){
+            low = midIndex + 1; // +1 because arrays start at zero.
+            indexPosition = recursiveFirstIndexOf(a, key, comparator, low, high);
+        }
+        else if (comparator.compare(key, a[midIndex]) == -1){
+            high = midIndex;
+            indexPosition = recursiveFirstIndexOf(a, key, comparator, low, high);
+        }
+        return indexPosition; //Will return -1 (from the beginning) if nothing was found.
     }
 
-    private static <Key> int backTrack
 
     public static <Key> int lastIndexOf(Key[] a, Key key, Comparator<Key> comparator) throws NoSuchObjectException{
         System.out.println("BinarySearchDeluxe.lastIndexOf");
