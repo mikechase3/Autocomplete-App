@@ -103,10 +103,14 @@ public class BinarySearchDeluxe {
             return midIndex;
         }
 
-        if (comparator.compare(key, a[midIndex]) == 1){ //Key is larger than the thing in the array.
-
+        if (comparator.compare(key, a[midIndex]) == 1){ //Key is larger than the mid-index in the array.
+            low = midIndex+1; //TODO: Consider removing +1. Josh thinks this won't work but Mike Chase does. I don't need to compare value twice? Once in midIndex - MGC
+            lastIndexOfRecursive(a, key, comparator, low, high);
         }
 
+        if (comparator.compare(key, a[midIndex]) == -1){ //Key is smaller than the mid-index
+            high = midIndex-1; //TODO: Consider removing -1. Josh thinks this won't work. Mike Chase thinks it might speed it up (very slightly).
+            lastIndexOfRecursive(a, key, comparator, low, high);
     }
 
 //    /**
