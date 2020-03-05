@@ -1,5 +1,6 @@
 /**
  * Mike Chase | Josh Cowden | Dai YuQin
+ * Updated March 4, 2020 at 9:56 PM
  *
  * The BinarySearchDeluxe class takes the user provided keys and returns a range of the matching keys.
  */
