@@ -5,7 +5,7 @@ import java.util.Comparator;
 public class Term implements Comparable<Term> {
 
 	String query;
-	static long weight;
+	long weight;
 	/* Initializes a term with the given query string and weight*/
 	public Term(String query, long weight )
 	{
@@ -64,7 +64,7 @@ public class Term implements Comparable<Term> {
 		for(int i=0;i<query.length() && i<that.query.length();i++)
 		{
 			char thisCurChar= query.charAt(i);
-			char thatCurChar= query.charAt(i);
+			char thatCurChar= that.query.charAt(i);
 			if(thisCurChar >thatCurChar)
 			{
 				return 1;
@@ -73,7 +73,6 @@ public class Term implements Comparable<Term> {
 			{
 				return -1;
 			}
-
 		}
 		if(query.length()>that.query.length())
 		{

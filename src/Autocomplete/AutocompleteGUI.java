@@ -559,71 +559,73 @@ public class AutocompleteGUI extends JFrame {
          * @param text string to search for
          */
         public void getSuggestions(String text) {
-            
+
             // don't search for suggestions if there is no input
             if (text.equals("")) {
                 suggestions.setListData(new String[0]);
                 suggestions.clearSelection();
                 suggestions.setVisible(false);
                 scrollPane.setVisible(false);
-            }
-            else {
-                int textLen = text.length();
+            } else {
+                try {
+                    int textLen = text.length();
 
-                // get all matching terms
-                Term[] allResults = auto.allMatches(text);
-                if (allResults == null) {
-                    throw new NullPointerException("allMatches() is null");
-                }
-
-                results = new String[Math.min(k, allResults.length)];
-                if (Math.min(k, allResults.length) > 0) {
-                    for (int i = 0; i < results.length; i++) {
-
-                        // A bit of a hack to get the Term's query string 
-                        // and weight from toString()
-                        String next = allResults[i].toString();
-                        if (allResults[i] == null) {
-                            throw new NullPointerException("allMatches() "
-                                    + "returned an array with a null entry");
-                        }
-                        int tab = next.indexOf('\t');
-                        if (tab < 0) {
-                            throw new RuntimeException("allMatches() returned"
-                                    + " an array with an entry without a tab:"
-                                    + " '" + next + "'");
-                        }
-                        String weight = next.substring(0, tab).trim();
-                        String query  = next.substring(tab);
-
-                        // truncate length if needed
-                        if (query.length() > suggListLen.length())
-                            query = query.substring(0, suggListLen.length());
-
-                        // create the table HTML 
-                        results[i] = "<html><table width=\"" 
-                                + searchText.getPreferredSize().width + "\">"
-                                + "<tr><td align=left>" 
-                                + query.substring(0, textLen + 1)
-                                + "<b>" + query.substring(textLen + 1) + "</b>";
-                        if (displayWeights) {
-                            results[i] += "<td width=\"10%\" align=right>"
-                                    + "<font size=-1><span id=\"weight\" "
-                                    + "style=\"float:right;color:gray\">" 
-                                    + weight + "</font>";
-                        }
-                        results[i] += "</table></html>";
+                    // get all matching terms
+                    Term[] allResults = auto.allMatches(text);
+                    if (allResults == null) {
+                        throw new NullPointerException("allMatches() is null");
                     }
-                    suggestions.setListData(results);
-                    suggestions.setVisible(true);
-                    scrollPane.setVisible(true);
-                }
-                else {
-                    // No suggestions
-                    suggestions.setListData(new String[0]);
-                    suggestions.clearSelection();
-                    suggestions.setVisible(false);
-                    scrollPane.setVisible(false);
+
+                    results = new String[Math.min(k, allResults.length)];
+                    if (Math.min(k, allResults.length) > 0) {
+                        for (int i = 0; i < results.length; i++) {
+
+                            // A bit of a hack to get the Term's query string
+                            // and weight from toString()
+                            String next = allResults[i].toString();
+                            if (allResults[i] == null) {
+                                throw new NullPointerException("allMatches() "
+                                        + "returned an array with a null entry");
+                            }
+                            int tab = next.indexOf('\t');
+                            if (tab < 0) {
+                                throw new RuntimeException("allMatches() returned"
+                                        + " an array with an entry without a tab:"
+                                        + " '" + next + "'");
+                            }
+                            String weight = next.substring(0, tab).trim();
+                            String query = next.substring(tab);
+
+                            // truncate length if needed
+                            if (query.length() > suggListLen.length())
+                                query = query.substring(0, suggListLen.length());
+
+                            // create the table HTML
+                            results[i] = "<html><table width=\""
+                                    + searchText.getPreferredSize().width + "\">"
+                                    + "<tr><td align=left>"
+                                    + query.substring(0, textLen + 1)
+                                    + "<b>" + query.substring(textLen + 1) + "</b>";
+                            if (displayWeights) {
+                                results[i] += "<td width=\"10%\" align=right>"
+                                        + "<font size=-1><span id=\"weight\" "
+                                        + "style=\"float:right;color:gray\">"
+                                        + weight + "</font>";
+                            }
+                            results[i] += "</table></html>";
+                        }
+                        suggestions.setListData(results);
+                        suggestions.setVisible(true);
+                        scrollPane.setVisible(true);
+                    } else {
+                        // No suggestions
+                        suggestions.setListData(new String[0]);
+                        suggestions.clearSelection();
+                        suggestions.setVisible(false);
+                        scrollPane.setVisible(false);
+                    }
+                } catch (Exception e) {
+                    System.out.println(e);
                 }
             }
         }
@@ -670,7 +672,6 @@ public class AutocompleteGUI extends JFrame {
             e.printStackTrace();
             return;
         }
-
         // open the URL in the browser
         try {
             Desktop.getDesktop().browse(searchAddress);
@@ -696,5 +697,4 @@ public class AutocompleteGUI extends JFrame {
                     }
                 });
     }
-
 }

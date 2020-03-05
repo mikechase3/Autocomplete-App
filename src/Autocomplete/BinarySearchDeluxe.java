@@ -23,7 +23,8 @@ public class BinarySearchDeluxe {
 
     //Member Methods
     public static <Key> int firstIndexOf(Key[] a, Key key, Comparator<Key> comparator) throws NoSuchObjectException {
-        System.out.println("BinarySearchDeluxe.firstIndexOf");
+        System.out.print("BinarySearchDeluxe.firstIndexOf: ");
+        System.out.println("key = " + key);
         int low = 0; //Sets an initial value of low.
         int high = a.length - 1; //Sets an initial value of high for the binarysearch recursive method.
         int firstIndex = -1; //-1 will be returned if nothing is found.
@@ -46,6 +47,7 @@ public class BinarySearchDeluxe {
             if (comparator.compare(key, a[midIndex]) == 0) {
                 return midIndex;
             }
+            return firstIndex;
         }
 
         /**
@@ -103,6 +105,7 @@ public class BinarySearchDeluxe {
             if (comparator.compare(key, a[midIndex]) == 0) {
                 return midIndex;
             }
+            return firstIndex;
         }
 
         /**
