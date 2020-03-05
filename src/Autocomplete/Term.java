@@ -1,5 +1,7 @@
 /**
  * Last updated March 4, 2020 at 10:24 PM
+ *
+ * March 4, 2020 at 10:24 PM: Updated required corner cases for "Term."
  */
 
 package Autocomplete;
