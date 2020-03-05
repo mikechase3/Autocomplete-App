@@ -3,10 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="c54db786-633c-4f1c-9d34-0c772e12a08f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/Autocomplete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/BinarySearchDeluxe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/AutocompleteGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/AutocompleteGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/AutocompleteGUI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/AutocompleteGUI$AutocompletePanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/AutocompleteGUI$AutocompletePanel$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/AutocompleteGUI$AutocompletePanel$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/AutocompleteGUI$AutocompletePanel$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/AutocompleteGUI$AutocompletePanel$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/AutocompleteGUI$AutocompletePanel$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/AutocompleteGUI$AutocompletePanel$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/AutocompleteGUI$AutocompletePanel$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/AutocompleteGUI$AutocompletePanel$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/AutocompleteGUI$AutocompletePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/AutocompleteGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chase-cowden-yuquin/Autocomplete/Term.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Autocomplete/BinarySearchDeluxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autocomplete/BinarySearchDeluxe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Autocomplete/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autocomplete/Term.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Autocomplete/Autocomplete.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
+            <state relative-caret-position="-584">
               <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
             </state>
           </provider>
@@ -32,12 +44,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Autocomplete/BinarySearchDeluxe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+            <state relative-caret-position="271">
+              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1801#1935#0" />
+                <element signature="docComment;method#lastIndexOf#0;class#BinarySearchDeluxe#0" />
               </folding>
             </state>
           </provider>
@@ -46,7 +58,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Autocomplete/Term.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
+            <state relative-caret-position="1425">
               <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
               <folding>
                 <element signature="e#1028#1029#0" expanded="true" />
@@ -71,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Autocomplete/AutocompleteGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="881">
+            <state relative-caret-position="9360">
               <caret line="699" column="1" selection-start-line="699" selection-start-column="1" selection-end-line="699" selection-end-column="1" />
             </state>
           </provider>
@@ -130,8 +142,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,6 +164,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,7 +224,8 @@
       <workItem from="1582475913953" duration="7431000" />
       <workItem from="1583101799546" duration="25000" />
       <workItem from="1583101858964" duration="3514000" />
-      <workItem from="1583193126516" duration="5095000" />
+      <workItem from="1583193126516" duration="6095000" />
+      <workItem from="1583369118682" duration="2004000" />
     </task>
     <task id="LOCAL-00001" summary="Started the binary search file">
       <created>1582478503689</created>
@@ -284,17 +297,23 @@
       <option name="project" value="LOCAL" />
       <updated>1583197230681</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Started the binary search file">
+      <created>1583198384480</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1583198384480</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16065000" />
+    <option name="totallyTimeSpent" value="19069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1125" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12140575" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.122470714" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -335,28 +354,9 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Autocomplete/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/Autocomplete/wiktionary.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Autocomplete/cities.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Autocomplete/In.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chase-cowden-yuquin.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Autocomplete/AutocompleteGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="881">
-          <caret line="699" column="1" selection-start-line="699" selection-start-column="1" selection-end-line="699" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Autocomplete/Term.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
+        <state relative-caret-position="1425">
           <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
           <folding>
             <element signature="e#1028#1029#0" expanded="true" />
@@ -367,21 +367,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Autocomplete/wiktionary.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Autocomplete/cities.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Autocomplete/AutocompleteGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9360">
+          <caret line="699" column="1" selection-start-line="699" selection-start-column="1" selection-end-line="699" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Autocomplete/In.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chase-cowden-yuquin.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Autocomplete/Autocomplete.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
+        <state relative-caret-position="-584">
           <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Autocomplete/BinarySearchDeluxe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        <state relative-caret-position="271">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1801#1935#0" />
+            <element signature="docComment;method#lastIndexOf#0;class#BinarySearchDeluxe#0" />
           </folding>
         </state>
       </provider>

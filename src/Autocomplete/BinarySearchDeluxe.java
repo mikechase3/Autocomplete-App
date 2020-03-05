@@ -66,11 +66,47 @@ public class BinarySearchDeluxe {
     }
 
 
+    /**
+     * Calls a recursive binary search function to find the index of the object. Verifies it exists
+     * @param a
+     * @param key
+     * @param comparator
+     * @param <Key>
+     * @return
+     * @throws NoSuchObjectException if the object is not found.
+     */
     public static <Key> int lastIndexOf(Key[] a, Key key, Comparator<Key> comparator) throws NoSuchObjectException{
         System.out.println("BinarySearchDeluxe.lastIndexOf");
-        System.out.println("Doesn't work");
+        int low = 0;
+        int high = a.length;
+        int indexToBeReturned;
 
-        return 6;
+        //Begin Recursive Call
+        indexToBeReturned = lastIndexOfRecursive(a, key, comparator, low, high);
+
+        //
+        if (indexToBeReturned == -1){
+            System.out.println("BinarySearchDeluxe.lastIndexOf: "); //TODO Delete Test Code
+            throw new NoSuchObjectException("No Results, element does not exist.");
+        }
+
+        else{
+            return indexToBeReturned;
+        }
+    }
+
+    public static <Key> int lastIndexOfRecursive(Key[] a, Key key, Comparator<Key> comparator, int low, int high){
+        int midIndex = low + ((high-low)/2);
+        int indexPosition = -1; //Will be -1 if it doesn't exist.
+
+        if (comparator.compare(key, a[midIndex]) == 0){ //If key is equal to midIndex TODO: Go find equal/earlier shit that also matches.
+            return midIndex;
+        }
+
+        if (comparator.compare(key, a[midIndex]) == 1){ //Key is larger than the thing in the array.
+
+        }
+
     }
 
 //    /**
