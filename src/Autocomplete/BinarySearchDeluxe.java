@@ -17,18 +17,19 @@ public class BinarySearchDeluxe {
 
 
     //Constructor
-    public BinarySearchDeluxe(){
+    public BinarySearchDeluxe() {
 
     }
 
     //Member Methods
-    public static <Key> int firstIndexOf(Key[] a, Key key, Comparator<Key> comparator) throws NoSuchObjectException{
+    public static <Key> int firstIndexOf(Key[] a, Key key, Comparator<Key> comparator) throws NoSuchObjectException {
         System.out.println("BinarySearchDeluxe.firstIndexOf");
         int low = 0; //Sets an initial value of low.
-        int high = a.length-1; //Sets an initial value of high for the binarysearch recursive method.
-        int returned = recursiveFirstIndexOf(a, key, comparator, low, high); //Begin recursive method.
+        int high = a.length - 1; //Sets an initial value of high for the binarysearch recursive method.
+        int firstIndex = -1; //-1 will be returned if nothing is found.
+        int returned = recursiveFirstIndexOf(a, key, comparator, low, high, firstIndex); //Begin recursive method.
 
-        if (returned == -1){
+        if (returned == -1) {
             System.out.println("BinarySearchDeluxe.firstIndexOf");
             throw new NoSuchElementException("The object does not exist.");
         }
@@ -38,36 +39,41 @@ public class BinarySearchDeluxe {
 
     }
 
-    private static <Key> int recursiveFirstIndexOf(Key[] a, Key key, Comparator<Key> comparator, int low, int high){
-        int midIndex = low + ((high-low)/2);
-        int indexPosition = -1;
+    private static <Key> int recursiveFirstIndexOf(Key[] a, Key key, Comparator<Key> comparator, int low, int high, int firstIndex) {
+        int midIndex = low + ((high - low) / 2);
+
+        if (high <= low) {
+            if (comparator.compare(key, a[midIndex]) == 0) {
+                return midIndex;
+            }
+        }
 
         /**
          * If the mid-index is already in the middle and it's the same, keep backtracking until you find the first one.
          */
-        if (comparator.compare(key, a[midIndex]) == 0){
-            while(comparator.compare(a[midIndex], a[midIndex-1]) == 0){ //Keep going back one by one on the array.
-                midIndex = midIndex-1;
-            }
-            indexPosition = midIndex; //Return the index of the lowest thing that matches.
+        if (comparator.compare(key, a[midIndex]) == 0) {
+
+            high = midIndex;
+            firstIndex = midIndex;
+            firstIndex = recursiveFirstIndexOf(a, key, comparator, low, high, firstIndex);
         }
         /**
          * If the provided key is larger than the middle index, eliminate half the array and check the midpoint again.
          */
-        else if (comparator.compare(key, a[midIndex]) == 1){
+        else if (comparator.compare(key, a[midIndex]) == 1) {
             low = midIndex + 1; // +1 because arrays start at zero.
-            indexPosition = recursiveFirstIndexOf(a, key, comparator, low, high);
-        }
-        else if (comparator.compare(key, a[midIndex]) == -1){
+            firstIndex = recursiveFirstIndexOf(a, key, comparator, low, high, firstIndex);
+        } else if (comparator.compare(key, a[midIndex]) == -1) {
             high = midIndex;
-            indexPosition = recursiveFirstIndexOf(a, key, comparator, low, high);
+            firstIndex = recursiveFirstIndexOf(a, key, comparator, low, high, firstIndex);
         }
-        return indexPosition; //Will return -1 (from the beginning) if nothing was found.
+        return firstIndex; //Will return -1 (from the beginning) if nothing was found.
     }
 
 
     /**
      * Calls a recursive binary search function to find the index of the object. Verifies it exists
+     *
      * @param a
      * @param key
      * @param comparator
@@ -75,43 +81,53 @@ public class BinarySearchDeluxe {
      * @return
      * @throws NoSuchObjectException if the object is not found.
      */
-    public static <Key> int lastIndexOf(Key[] a, Key key, Comparator<Key> comparator) throws NoSuchObjectException{
+    public static <Key> int lastIndexOf(Key[] a, Key key, Comparator<Key> comparator) throws NoSuchObjectException {
         System.out.println("BinarySearchDeluxe.lastIndexOf");
-        int low = 0;
-        int high = a.length;
-        int indexToBeReturned;
+        int low = 0; //Sets an initial value of low.
+        int high = a.length - 1; //Sets an initial value of high for the binarysearch recursive method.
+        int firstIndex = -1; //-1 will be returned if nothing is found.
+        int returned = lastIndexOfRecursive(a, key, comparator, low, high, firstIndex); //Begin recursive method.
 
-        //Begin Recursive Call
-        indexToBeReturned = lastIndexOfRecursive(a, key, comparator, low, high);
-
-        //
-        if (indexToBeReturned == -1){
-            System.out.println("BinarySearchDeluxe.lastIndexOf: "); //TODO Delete Test Code
-            throw new NoSuchObjectException("No Results, element does not exist.");
+        if (returned == -1) {
+            System.out.println("BinarySearchDeluxe.lastIndexOf");
+            throw new NoSuchElementException("The object does not exist.");
         }
 
-        else{
-            return indexToBeReturned;
-        }
+        return returned;
     }
 
-    public static <Key> int lastIndexOfRecursive(Key[] a, Key key, Comparator<Key> comparator, int low, int high){
-        int midIndex = low + ((high-low)/2);
-        int indexPosition = -1; //Will be -1 if it doesn't exist.
+    public static <Key> int lastIndexOfRecursive(Key[] a, Key key, Comparator<Key> comparator, int low, int high, int firstIndex) {
+        int midIndex = low + ((high - low) / 2);
 
-        if (comparator.compare(key, a[midIndex]) == 0){ //If key is equal to midIndex TODO: Go find equal/earlier shit that also matches.
-            return midIndex;
+        if (high <= low) {
+            if (comparator.compare(key, a[midIndex]) == 0) {
+                return midIndex;
+            }
         }
 
-        if (comparator.compare(key, a[midIndex]) == 1){ //Key is larger than the mid-index in the array.
-            low = midIndex+1; //TODO: Consider removing +1. Josh thinks this won't work but Mike Chase does. I don't need to compare value twice? Once in midIndex - MGC
-            lastIndexOfRecursive(a, key, comparator, low, high);
-        }
+        /**
+         * If the mid-index is already in the middle and it's the same, keep backtracking until you find the first one.
+         */
+        if (comparator.compare(key, a[midIndex]) == 0) {
 
-        if (comparator.compare(key, a[midIndex]) == -1){ //Key is smaller than the mid-index
-            high = midIndex-1; //TODO: Consider removing -1. Josh thinks this won't work. Mike Chase thinks it might speed it up (very slightly).
-            lastIndexOfRecursive(a, key, comparator, low, high);
+            low = midIndex+1;
+            firstIndex = midIndex;
+            firstIndex = recursiveFirstIndexOf(a, key, comparator, low, high, firstIndex);
+        }
+        /**
+         * If the provided key is larger than the middle index, eliminate half the array and check the midpoint again.
+         */
+        else if (comparator.compare(key, a[midIndex]) == 1) {
+            low = midIndex + 1; // +1 because arrays start at zero.
+            firstIndex = recursiveFirstIndexOf(a, key, comparator, low, high, firstIndex);
+
+        } else if (comparator.compare(key, a[midIndex]) == -1) {
+            high = midIndex;
+            firstIndex = recursiveFirstIndexOf(a, key, comparator, low, high, firstIndex);
+        }
+        return firstIndex; //Will return -1 (from the beginning) if nothing was found.
     }
+}
 
 //    /**
 //     * Returns the first numOfCharsToReturn characters of a string as a string.
@@ -127,4 +143,3 @@ public class BinarySearchDeluxe {
 //            return input.substring(0, numOfCharsToReturn-1);
 //        }
 //    }
-}
