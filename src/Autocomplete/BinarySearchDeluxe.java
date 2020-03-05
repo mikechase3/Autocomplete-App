@@ -116,18 +116,18 @@ public class BinarySearchDeluxe {
 
             low = midIndex+1;
             firstIndex = midIndex;
-            firstIndex = recursiveFirstIndexOf(a, key, comparator, low, high, firstIndex);
+            firstIndex = lastIndexOfRecursive(a, key, comparator, low, high, firstIndex);
         }
         /**
          * If the provided key is larger than the middle index, eliminate half the array and check the midpoint again.
          */
         else if (comparator.compare(key, a[midIndex]) == 1) {
             low = midIndex + 1; // +1 because arrays start at zero.
-            firstIndex = recursiveFirstIndexOf(a, key, comparator, low, high, firstIndex);
+            firstIndex = lastIndexOfRecursive(a, key, comparator, low, high, firstIndex);
 
         } else if (comparator.compare(key, a[midIndex]) == -1) {
             high = midIndex;
-            firstIndex = recursiveFirstIndexOf(a, key, comparator, low, high, firstIndex);
+            firstIndex = lastIndexOfRecursive(a, key, comparator, low, high, firstIndex);
         }
         return firstIndex; //Will return -1 (from the beginning) if nothing was found.
     }
