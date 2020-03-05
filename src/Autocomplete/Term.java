@@ -7,10 +7,14 @@ public class Term implements Comparable<Term> {
 	String query;
 	long weight;
 	/* Initializes a term with the given query string and weight*/
-	public Term(String query, long weight )
+	public Term(String query, long weight ) throws NullPointerException, IllegalArgumentException //Corner Cases
 	{
 		this.query= query;
 		this.weight= weight;
+
+		//Required corner cases that the constructor will throw if things go wrong. TODO Give to Josh.
+		if (query.equals(null)) throw new NullPointerException("Term.Term line ~16. Error: Query is null"); //TODO Remove? inefficient but on ASGN Page as "Corner Case?"
+		if (weight < 0) throw new IllegalArgumentException("Term.Term line ~17. Error: Weight is negative.");
 	}
 	private static class ReverseWeightOrder implements Comparator<Term>
 	{
@@ -37,8 +41,11 @@ public class Term implements Comparable<Term> {
 	/* Compares the two terms in lexicographic order but using only the first
 	 * r  characters of each query
 	 */
-	public static Comparator<Term> byPrefixOrder(int r)
+	public static Comparator<Term> byPrefixOrder(int r) throws IllegalArgumentException //TODO: Josh, Update.
 	{
+		if (r < 0){
+			throw new IllegalArgumentException(); //TODO: Josh, Update.
+		}
 		return new PrefixOrder(r);
 //return null;
 	}
@@ -52,6 +59,10 @@ public class Term implements Comparable<Term> {
 
 		public int compare(Term o1,Term o2)
 		{
+			if(r > o1.query.length() || r>o2.query.length()){
+				return o1.compareTo(o2);
+			}
+
 			Term t1= new Term(o1.query.subSequence(0, r).toString(),o1.weight);
 			Term t2= new Term(o2.query.subSequence(0, r).toString(),o2.weight);
 			return t1.compareTo(t2);
