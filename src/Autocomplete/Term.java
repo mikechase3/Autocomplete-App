@@ -1,3 +1,7 @@
+/**
+ * Last updated March 4, 2020 at 10:24 PM
+ */
+
 package Autocomplete;
 
 import java.util.Comparator;
