@@ -25,6 +25,7 @@ public class Autocomplete {
 
     //Member Variables
 	Term[] terms;
+	int count=0;
 	//Constructor
     /**
      * Initializes the data structure from the given array of terms
@@ -37,7 +38,9 @@ public class Autocomplete {
 		this.terms = terms;
 		int length = terms.length;
    	 //Arrays.parallelSort(terms, 0, length-1, Term.byPrefixOrder(length));
+//		System.out.println("before: "+ printTerms());
    	 mergesort(terms,0,length-1,Term.byPrefixOrder(length)); 
+//   	System.out.println("after: "+printTerms());
    	 //have to be this version,but something goes wrong with the comp.
 
 	}
@@ -100,19 +103,41 @@ return match;
     	int mid = begin+(end-begin)/2;
     	mergesort(terms,begin,mid,comp); //Merge sort with the first half
     	mergesort(terms,mid+1,end,comp); //Merge sort, break down second half
+    	
     	merge(terms,begin,mid,end,comp); //Merges the two halves together. 
+    	count++;
+//    	System.out.println(count+" "+printTerms());
     }
     private void merge(Term[] terms,int begin,int mid,int end,Comparator<Term> comp)
     {
     	Term[] aux = new Term[terms.length];
     	for(int i = begin;i<=end;i++) aux[i] = terms[i];    
     	int i = begin,j = mid+1,k = begin;// It should be j = mid+1, otherwise out of range.
-    	while(i<=mid&&j<=end&&k<=end)
+    	while(i<=mid&&j<=end)
     	{
-    		if(comp.compare(terms[i], terms[j])>0) terms[k++] = aux[j++];//a[i]>a[j],aux[k] = a[j]
-    		else terms[k++] = aux[i++];
+    		if(comp.compare(aux[i], aux[j])>0) 
+    			{
+    			terms[k] = aux[j];//a[i]>a[j],aux[k] = a[j]
+    			k++;
+    			j++;
+    			}
+    		else 
+    			{
+    			terms[k] = aux[i];
+    			k++;i++;
+    			}
     	}
     	while(i<=mid) terms[k++] = aux[i++];
     	//j part has already there
+    }
+    private String printTerms()
+    {
+    	String res="[";
+    	for(int i=0;i<terms.length;i++)
+    	{
+    		res+=terms[i].query+" ,";
+    	}
+    	res+="]";
+    	return res;
     }
 }
